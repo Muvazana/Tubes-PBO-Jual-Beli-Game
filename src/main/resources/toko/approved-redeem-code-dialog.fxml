@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.tubespbokel4.view.toko.ApprovedRedeemCodeDialog">
+    <header>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="320.0">
+            <children>
+                <Label layoutX="97.0" layoutY="22.0" text="Approve Redeem Code (Optional)">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+    </header>
+    <expandableContent>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </expandableContent>
+    <buttonTypes>
+        <ButtonType fx:constant="CANCEL" />
+        <ButtonType fx:constant="APPLY" />
+    </buttonTypes>
+    <content>
+        <GridPane alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="89.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.0" minWidth="-Infinity" prefWidth="328.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Redeem Code">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="etRedeemCode" promptText="Redeem Code (Optional)" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+    </content>
+</DialogPane>

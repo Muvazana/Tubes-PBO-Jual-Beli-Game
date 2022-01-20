@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="745.0" style="-fx-background-color: #6BC7E4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Group layoutX="14.0" layoutY="9.0">
+            <children>
+                <Label fx:id="txtProductName" prefHeight="35.0" prefWidth="508.0" text="Product Name">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            <GridPane layoutY="36.0" prefHeight="140.0" prefWidth="507.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="120.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="5.0" prefWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="-Infinity" prefWidth="353.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                      <Label fx:id="txtLabelMemberSeller" text="Member">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Label>
+                      <Label text="Total Price" GridPane.rowIndex="1">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Label>
+                      <Label fx:id="txtUserName" prefWidth="353.0" text="Member Name" GridPane.columnIndex="2">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Label>
+                      <Label fx:id="txtTotalPrice" prefWidth="353.0" text="Rp. 50000" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                      </Label>
+                  <Label text=":" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Note" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Redeem Code" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Status" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtNote" prefWidth="353.0" text="Optional" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtRedeemCode" prefWidth="353.0" text="Optional" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtStatus" text="Request" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCopyNote" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5; -fx-padding: 0;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/akar-icons-copy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnCopyRedeemCode" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-background-radius: 5; -fx-padding: 0;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/akar-icons-copy.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+            </children>
+        </Group>
+        <Group layoutX="537.0" layoutY="77.0">
+            <children>
+                <Button fx:id="btnApproveDone" mnemonicParsing="false" prefWidth="91.0" style="-fx-background-color: #5CF200; -fx-padding: 6; -fx-background-radius: 10;" text="Done" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="btnRejectCancel" layoutX="103.0" mnemonicParsing="false" prefWidth="91.0" style="-fx-background-color: #FF0000; -fx-padding: 6; -fx-background-radius: 10;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </Group>
+    </children>
+</AnchorPane>

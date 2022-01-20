@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="745.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.tubespbokel4.view.toko.DashboardTokoFrame">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="745.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/banner.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtNamaToko" alignment="CENTER" layoutX="1.0" layoutY="49.0" prefHeight="17.0" prefWidth="744.0" text="Nama Toko" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutY="150.0" prefHeight="70.0" prefWidth="744.0" style="-fx-background-color: #F5BB00;">
+         <children>
+            <Label fx:id="txtStoreDesc" alignment="TOP_LEFT" layoutX="23.0" layoutY="8.0" prefHeight="55.0" prefWidth="516.0" text="Ini adalah Deskripsi Toko" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnTambahBarang" alignment="CENTER" graphicTextGap="6.0" layoutX="565.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onBtnTambahBarangClicked" prefHeight="70.0" prefWidth="180.0" style="-fx-background-radius: 0; -fx-padding: 0;" stylesheets="@../assets/stylesheet.css" text="Add Item" textFill="#02329b">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0">
+                     <image>
+                        <Image url="@../assets/icons/fluent-add-circle-16-filled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <ListView fx:id="lvItems" layoutY="282.0" prefHeight="487.0" prefWidth="745.0" style="-fx-background-insets: 0; -fx-padding: 0px; -fx-background-color: #FFFFFF;">
+         <placeholder>
+            <Label text="Tidak ada Barang yang Dijual!">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </placeholder>
+      </ListView>
+   </children>
+</AnchorPane>

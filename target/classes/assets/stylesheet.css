@@ -1,0 +1,19 @@
+
+#btnTambahBarang {
+    -fx-background-color: #F5BB00;
+    -fx-text-fill: #02329B;
+}
+/*
+#btnTambahBarang:hover {
+    -fx-background-color: #FFCE31;
+    -fx-text-fill: #02329B;
+}
+*/
+.button {
+    -fx-background-color: #FFCE31;
+    -fx-text-fill: #02329B;
+}
+.button:hover {
+    -fx-background-color: #DDA800;
+    -fx-text-fill: #02329B;
+}

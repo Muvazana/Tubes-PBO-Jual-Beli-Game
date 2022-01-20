@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="720.0" style="-fx-background-color: #6BC7E4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <ImageView fx:id="ivItemImage" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/akar-icons-image.png" />
+         </image>
+      </ImageView>
+        <Group layoutX="165.0" layoutY="4.0">
+            <children>
+                <Label fx:id="txtItemName" text="Item Name">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutY="34.0" text="Type   :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutY="60.0" text="Harga :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="txtItemType" layoutX="65.0" layoutY="34.0" text="Wallet">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="txtPrice" layoutX="65.0" layoutY="60.0" text="Rp. 50000">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Text layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ini adalah deskripsi yang sangan panjangggggg yaaaaaaaaaa yaaaaaaaaaa yaaaaaaaaaa yaaaaaaaaaa yaaaaaaaaaa yaaaaaaaaaayaaaaaaaaaayaaaaaaaaaayaaaaaaaaaa yaaaaaaaaaa" visible="false" wrappingWidth="450.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="txtDescription" alignment="TOP_LEFT" layoutY="88.0" prefHeight="54.0" prefWidth="450.0" text="ini adalah deskripsi yang sangan panjangggggg yaaaaaaaaaaaa yaaaaaaaaaaaa" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            </children>
+        </Group>
+        <Group layoutX="649.0" layoutY="10.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/emojione-star.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtRate" layoutX="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="25.0" text="4.5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Group>
+    </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

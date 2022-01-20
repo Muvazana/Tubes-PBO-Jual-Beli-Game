@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.tubespbokel4.view.member.DashboardMemberRootFrame">
+    <children>
+        <AnchorPane fx:id="apRootFrame" layoutX="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="745.0" />
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="280.0" style="-fx-background-color: #0081CB;">
+            <children>
+                <GridPane prefHeight="768.0" prefWidth="280.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="150.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="604.0" minHeight="10.0" prefHeight="570.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="55.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="txtUserName" layoutX="20.0" layoutY="24.0" prefHeight="17.0" prefWidth="240.0" text="Member Name" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="txtUserType" layoutX="20.0" layoutY="53.0" prefWidth="240.0" text="Member" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="txtWallet" layoutX="20.0" layoutY="78.0" prefWidth="210.0" text="Wallet : Rp. 50000" textFill="WHITE">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                        <ImageView fx:id="btnAddWallet" fitHeight="30.0" fitWidth="30.0" layoutX="230.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/fluent-add-circle-16-filled.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                            <children>
+                        <GridPane alignment="TOP_CENTER" prefWidth="280.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="62.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                                      <Button fx:id="btnDashboard" alignment="BASELINE_LEFT" graphicTextGap="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-radius: 0;" stylesheets="@../assets/stylesheet.css" text="Home" textAlignment="CENTER" textFill="#02329b">
+                                          <graphic>
+                                              <ImageView fitHeight="28.0" fitWidth="28.0">
+                                                  <Image url="@../assets/icons/ant-design-home-filled.png" />
+                                              </ImageView>
+                                          </graphic>
+                                          <padding>
+                                              <Insets left="25.0" />
+                                          </padding>
+                                          <font>
+                                              <Font size="24.0" />
+                                          </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                      </Button>
+                                      <Button fx:id="btnProfile" alignment="BASELINE_LEFT" graphicTextGap="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-radius: 0;" stylesheets="@../assets/stylesheet.css" text="Profile" textAlignment="CENTER" textFill="#02329b" GridPane.rowIndex="1">
+                                          <graphic>
+                                              <ImageView fitHeight="28.0" fitWidth="28.0">
+                                                  <image>
+                                                      <Image url="@../assets/icons/gg-profile.png" />
+                                                  </image>
+                                              </ImageView>
+                                          </graphic>
+                                          <padding>
+                                              <Insets left="25.0" />
+                                          </padding>
+                                          <font>
+                                              <Font size="24.0" />
+                                          </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                      </Button>
+                              <Button fx:id="btnInbox" alignment="BASELINE_LEFT" graphicTextGap="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-radius: 0;" stylesheets="@../assets/stylesheet.css" text="Inbox" textAlignment="CENTER" textFill="#02329b" GridPane.rowIndex="2">
+                                 <graphic>
+                                    <ImageView fitHeight="28.0" fitWidth="28.0">
+                                       <image>
+                                          <Image url="@../assets/icons/fluent-mail-inbox-16-filled.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets left="25.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </GridPane>
+                            </children></Pane>
+                        <Button fx:id="btnLogout" alignment="BASELINE_LEFT" graphicTextGap="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onBtnLogoutclicked" prefHeight="54.0" prefWidth="280.0" style="-fx-background-radius: 0;" stylesheets="@../assets/stylesheet.css" text="Logout" textAlignment="CENTER" textFill="#02329b" GridPane.rowIndex="2">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="28.0">
+                                    <image>
+                                        <Image url="@../assets/icons/ri-logout-box-line.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="25.0" />
+                            </padding>
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
