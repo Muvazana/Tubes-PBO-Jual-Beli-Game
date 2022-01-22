@@ -3,6 +3,10 @@
  <p align="center">Jual Beli Game, Wallet dan Items (Desktop Version)</p>
 </p>
 
+<p>
+ Aplikasi ini menggunakan Bahasa Java dengan JavaFX sebagai GUI
+</p>
+
 # Kelompok-4
 
 - [Moch. Nauval Rizaldi Nasril (1301194482)](https://github.com/Muvazana)
