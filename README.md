@@ -6,5 +6,5 @@
 # Kelompok-4
 
 - [Moch. Nauval Rizaldi Nasril (1301194482)](https://github.com/Muvazana)
-- [Arga Melvern (1301194055)]
-- [Jane Raihan (1301194240)]
+- [Arga Melvern (1301194055)](https://github.com/ArgaMelvern)
+- [Jane Raihan (1301194240)]()
